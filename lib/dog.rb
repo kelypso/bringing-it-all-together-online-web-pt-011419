@@ -6,7 +6,9 @@ class Dog
     self.id ||= nil # id defaults to nil
   end
   
-  
+  def self.create_table
+    
+  end
 
 
 end
