@@ -64,6 +64,10 @@ class Dog
     self.new(attrs_hash)
   end
   
+  def self.find_or_create_by(name:, breed:)
+    
+    emd
+  
   def self.find_by_name(name)
     sql = <<-SQL
       SELECT * FROM dogs 
