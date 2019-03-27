@@ -38,6 +38,12 @@ class Dog
     self
   end
   
+  def self.create(name, breed) 
+    dog = Student.new(name, grade)
+    dog.save
+    dog
+  end
+  
   
   def update 
     sql = <<-SQL
