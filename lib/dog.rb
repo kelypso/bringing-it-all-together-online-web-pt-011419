@@ -66,7 +66,7 @@ class Dog
   
   def self.find_or_create_by(name:, breed:)
     
-    emd
+  end
   
   def self.find_by_name(name)
     sql = <<-SQL
