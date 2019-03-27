@@ -38,11 +38,12 @@ class Dog
     self
   end
   
-  def self.create(name, breed) 
-    dog = Dog.new(name, breed)
+  def self.create(attr_hash)
+    dog = self.new(attr_hash)
     dog.save
     dog
   end
+
   
   
   def update 
