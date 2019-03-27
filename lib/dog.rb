@@ -29,7 +29,7 @@ class Dog
   def save
     sql = <<-SQL
       INSERT INTO dogs (name, breed) 
-      VALUES (?, ?)
+      VALUES (?, ?);
       SQL
 
     DB[:conn].execute(sql, self.name, self.breed)
@@ -43,7 +43,7 @@ class Dog
     sql = <<-SQL
       UPDATE dogs
       SET name = ?, breed = ?
-      WHERE id = ?
+      WHERE id = ?;
     SQL
     
     DB[:conn].execute(sql, self.name, self.breed, self.id)
