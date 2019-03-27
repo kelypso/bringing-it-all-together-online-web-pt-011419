@@ -55,6 +55,15 @@ class Dog
     end.first
   end
   
+  def self.new_from_db(row)
+    attrs_hash = {
+      :id => row[0],
+      :name => row[1],
+      :breed => row[2]
+    }
+    self.new(attrs_hash)
+  end
+  
   def update 
     sql = <<-SQL
       UPDATE dogs
